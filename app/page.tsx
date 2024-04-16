@@ -1,7 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function Home() {
+  console.debug('Rendered Home RSC');
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
